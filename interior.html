@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-gallery</title>
+    <link rel="stylesheet" href="asset/styles.css">
+</head>
+<body>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Exterior Designs</a>
+            <a href="interior.html">Interior Designs</a>
+           
+          </div>
+          
+          <!-- Use any element to open the sidenav -->
+          <div class="header" >
+          <span onclick="openNav()"><ion-icon name="menu-outline"></ion-icon></span>
+          <h1>Interior Designs</h1>
+        </div>
+
+          
+    </nav>
+    <div class="background-img" id="backgroundimgbox">
+        <img src="asset/image/pic-2.png" id="backgroundimg">
+        <span onclick="closefullimg()">X</span>
+    </div>
+<div class="image-gallery">
+    <img src="asset/image/pic-1.png" alt=""  onclick="openfullimg(this.src)">
+    <img src="asset/image/pic-2.png" alt=""  onclick="openfullimg(this.src)">
+    <img src="asset/image/pic-4.jpg" alt=""  onclick="openfullimg(this.src)">
+    <img src="asset/image/pic-8.jpg" alt=""  onclick="openfullimg(this.src)">
+    <img src="asset/image/pic-7.jpg" alt=""  onclick="openfullimg(this.src)">
+    <img src="asset/image/pic-6.jpg" alt=""  onclick="openfullimg(this.src)">
+    <img src="asset/image/pic-5.jpg" alt=""  onclick="openfullimg(this.src)">
+    <img src="asset/image/pic-3.jpg" alt=""  onclick="openfullimg(this.src)">
+</div>
+<script src="asset/main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
